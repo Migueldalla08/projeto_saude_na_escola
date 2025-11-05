@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acompanhamento de Saúde - Saúde na Escola</title>
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Acompanhamento de Saúde do Aluno</h1>
+    <form class="health-form" action="#" method="post">
+      <label for="symptom">Sintoma</label>
+      <input type="text" id="symptom" name="symptom" placeholder="Digite o sintoma" required />
+
+      <label for="severity">Gravidade dos sintomas</label>
+      <select id="severity" name="severity" required>
+        <option value="" disabled selected>Selecione a gravidade</option>
+        <option value="leve">Leve</option>
+        <option value="moderada">Moderada</option>
+        <option value="grave">Grave</option>
+      </select>
+
+      <label for="startDate">Data de início dos sintomas</label>
+      <input type="date" id="startDate" name="startDate" required />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #480ca8;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+  }
+  
+  .container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #023047;
+  }
+  
+  .health-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .health-form input[type="text"],
+  .health-form input[type="date"],
+  .health-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .health-form input[type="text"]:focus,
+  .health-form input[type="date"]:focus,
+  .health-form select:focus {
+    border-color: #f72585;
+    outline: none;
+  }
+  
+  .health-form button {
+    background-color: #f72585;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  
+  .health-form button:hover {
+    background-color: #f72585;
+  }
