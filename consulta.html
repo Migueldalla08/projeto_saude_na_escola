@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consulta - Saúde na Escola</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="js/home.js">
+</head>
+<body>
+  <main class="container">
+    <h1>Consulta</h1>
+
+    <form class="health-form" id="consultaForm">
+      <label for="symptom">Sintomas</label>
+      <input 
+        type="text" 
+        id="symptom" 
+        name="symptom" 
+        placeholder="Sintomas informados na triagem"
+        required
+      />
+
+      <label for="severity">Gravidade</label>
+      <select id="severity" name="severity" required>
+        <option value="" disabled selected>Selecione a gravidade</option>
+        <option value="leve">Leve</option>
+        <option value="moderada">Moderada</option>
+        <option value="grave">Grave</option>
+      </select>
+
+      <label for="appointmentDate">Dia da consulta</label>
+      <input 
+        type="date" 
+        id="appointmentDate" 
+        name="appointmentDate" 
+        required
+      />
+
+      <button type="button" id="agendarBtn">Agendar</button>
+    </form>
+
+    <!-- Mensagem que aparece depois -->
+    <p id="mensagem" style="margin-top: 15px; font-weight: 600; color: #028a0f; display: none;">
+      Consulta agendada
+    </p>
+  </main>
+
+  <!-- Link para o JavaScript separado -->
+  <script src="consulta.js"></script>
+</body>
+</html>
+
